@@ -32,7 +32,7 @@
 
 # Nav | 导读
 
-- 更多 Web 开发相关内容请参阅《[Web-Series](https://github.com/wx-chevalier/Web-Series?q=)》。
+- 本篇剥离自 [Frontend-Series](https://github.com/wx-chevalier/Frontend-Series?q=)，更多 Web 开发相关内容请参阅《[Web-Series](https://github.com/wx-chevalier/Web-Series?q=)》。
 
 - 计算机视觉与深度学习相结合的内容请参阅《[DeepLearning-Series](https://github.com/wx-chevalier/DeepLearning-Series?q=)》
 
