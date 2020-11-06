@@ -10,7 +10,7 @@
 
 #### FFplay 使用示例
 
-- 播放 test.mkv ，播放完成后自动退出
+- 播放 test.mkv，播放完成后自动退出
 
   ```shell
   ffplay -autoexit test.mkv
@@ -26,7 +26,7 @@
 
 ```
 '-L'    显示 license
-'-h, -?, -help, --help [arg]' 打印帮助信息；可以指定一个参数 arg ，如果不指定，只打印基本选项
+'-h, -?, -help, --help [arg]' 打印帮助信息；可以指定一个参数 arg，如果不指定，只打印基本选项
     可选的 arg 选项：
     'long'    除基本选项外，还将打印高级选项
     'full'    打印一个完整的选项列表，包含 encoders, decoders, demuxers, muxers, filters 等的共享以及私有选项
