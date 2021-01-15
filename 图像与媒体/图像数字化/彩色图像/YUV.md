@@ -202,7 +202,7 @@ yuv420p 像素格式在垂直方向(列)大小计算在 libavutil/imgutils.c 的
 114     int i, total_size, size[4] = { 0 }, has_plane[4] = { 0 };
 115
 116     const AVPixFmtDescriptor *desc = av_pix_fmt_desc_get(pix_fmt);
-117     memset(data     , 0, sizeof(data[0])*4);
+117     memset(data    , 0, sizeof(data[0])*4);
 118
 119     if (!desc || desc->flags & AV_PIX_FMT_FLAG_HWACCEL)
 120         return AVERROR(EINVAL);
