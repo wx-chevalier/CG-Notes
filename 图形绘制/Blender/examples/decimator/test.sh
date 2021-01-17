@@ -1,0 +1,1 @@
+/Applications/Blender/blender.app/Contents/MacOS/blender -b -P blenderSimplify.py -- --ratio 0.5 --inm '088.stl' --outm '088_simple.stl'
