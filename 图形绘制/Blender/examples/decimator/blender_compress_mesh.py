@@ -47,15 +47,25 @@ def import_mesh(filepath):
         return stdout.read()
 
 
-if "--" not in argv:
-    argv = []  # as if no args are passed
-else:
-    argv = argv[argv.index("--") + 1:]
-parser = argparse.ArgumentParser(
-    description='Blender mesh file to GLB conversion tool')
-parser.add_argument('-i', '--input', help='mesh file to be converted')
-parser.add_argument('-o', '--output', help='output GLB file')
-args = parser.parse_args(argv)
+def get_args():
+    parser = argparse.ArgumentParser(
+        description='Blender mesh file to GLB conversion tool')
+
+    # get all script args
+    _, all_arguments = parser.parse_known_args()
+    double_dash_index = all_arguments.index('--')
+    script_args = all_arguments[double_dash_index + 1:]
+
+    # add parser rules
+    parser.add_argument(
+        '-r', '--ratio', help="Ratio of reduction, Example: 0.5 mean half number of faces ", default=0.5)
+    parser.add_argument('-i', '--input', help='mesh file to be converted')
+    parser.add_argument('-o', '--output', help='output GLB file')
+    parsed_script_args, _ = parser.parse_known_args(script_args)
+    return parsed_script_args
+
+
+args = get_args()
 
 if (args.input and args.output):
     ifile = args.input
@@ -71,11 +81,6 @@ if (args.input and args.output):
             if len(bpy.data.objects) != 0:
                 for obj in bpy.data.objects:
                     if type(obj.data) == bpy_types.Mesh:
-                        # Apply material (only works in Blender 2.8)
-                        # if not obj.data.materials:
-                        #     mat = bpy.data.materials.new(name="Material")
-                        #     mat.use_nodes = True
-                        #     obj.data.materials.append(mat)
 
                         bpy.context.view_layer.objects.active = obj
 
@@ -83,7 +88,7 @@ if (args.input and args.output):
                             datetime.datetime.now().time(), obj.name, len(
                                 obj.data.vertices), len(obj.data.edges), len(obj.data.polygons)))
                         modifierName = 'DecimateMod'
-                        decimateRatio = 0.5
+                        decimateRatio = float(args.ratio)
                         modifier = obj.modifiers.new(modifierName, 'DECIMATE')
                         modifier.ratio = decimateRatio
                         modifier.use_collapse_triangulate = True
@@ -96,7 +101,7 @@ if (args.input and args.output):
 
                 bpy.ops.object.origin_set()
                 bpy.ops.export_scene.gltf(
-                    filepath=ofile, export_draco_mesh_compression_enable=True, export_draco_mesh_compression_level=7)
+                    filepath=ofile, export_draco_mesh_compression_enable=True, export_draco_mesh_compression_level=5)
             else:
                 # likely invalid file error, not an easy way to capture this from Blender
                 err_msg = stdout.replace("\n", "; ")
