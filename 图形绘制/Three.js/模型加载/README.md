@@ -12,6 +12,6 @@
 
 - VTK：VTK 是由 Visualization Toolkit 定义的文件格式,用来指定顶点和面。VTK 有两种格式,Three. js 支持旧的,即 ASC 格式。
 
-- PDB：这是一种非常特别的格式,由 Protein Databank(蛋白质数据银行)创建,用来定义蛋白质的形状。 Three. js 可以加载并显示用这种格式描述的蛋白质。
+- PDB：这是一种非常特别的格式,由 Protein Databank(蛋白质数据银行)创建,用来定义蛋白质的形状。Three. js 可以加载并显示用这种格式描述的蛋白质。
 
 - PLY：该格式全称是多边形(polygon)文件格式，通常用来保存三维扫描仪的数据。
