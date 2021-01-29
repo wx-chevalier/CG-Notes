@@ -66,7 +66,7 @@
 '-window_title title'  设置窗口标题(默认为输入文件名)
 '-loop number'    循环播放 "number" 次(0将一直循环)
 '-showmode mode'  设置显示模式
-    可选的 mode ：
+    可选的 mode：
     '0, video'    显示视频
     '1, waves'    显示音频波形
     '2, rdft'     显示音频频带
