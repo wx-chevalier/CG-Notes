@@ -30,7 +30,7 @@
 
 本篇汇集了笔者对于计算机图形学基础理论知识、计算机视觉基础理论知识的笔记，然后讨论了数字化图像理论与厂家的图像处理、利用 Three.js/WebGL 等进行常见图像绘制等内容，最后还讨论了常见的数据可视化术语、工具等实现方式。
 
-# Nav | 导读
+# Nav | 关联导航
 
 - 本篇剥离自 [Frontend-Series](https://github.com/wx-chevalier/Frontend-Series?q=)，更多 Web 开发相关内容请参阅[《Web-Series](https://github.com/wx-chevalier/Web-Series?q=)》。
 
