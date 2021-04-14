@@ -69,6 +69,7 @@
         
       - [4.5.5 模型加载](/图形绘制/Three.js/模型加载/README.md)
         - [4.5.5.1 OBJ 与 MTL 格式](/图形绘制/Three.js/模型加载/OBJ%20与%20MTL%20格式.md)
+        - [4.5.5.2 gITF](/图形绘制/Three.js/模型加载/gITF.md)
       - [4.5.6 相机与动画](/图形绘制/Three.js/相机与动画/README.md)
         
       - [4.5.7 粒子系统](/图形绘制/Three.js/粒子系统/README.md)
