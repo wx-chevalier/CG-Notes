@@ -1,93 +1,9 @@
 # WebGL
 
-```js
-const canvas = document.getElementById("container");
-const gl =
-  canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
-gl.clearColor(0.0, 0.0, 0.0, 1.0); // 指定清空canvas的颜色
-gl.clear(gl.COLOR_BUFFER_BIT); // 清空canvas
-```
+对于 WebGL 百度百科给出的解释是 WebGL 是一种 3D 绘图协议，而对此维基百科给出的解释却是一种 JavaScript API。由于 WebGL 技术旨在帮助我们在不使用插件的情况下在任何兼容的网页浏览器中开发交互式 2D 和 3D 网页效果，我们可以将其理解为一种帮助我们开发 3D 网页的绘图技术，当然底层还是 JavaScript API。
 
-使用 WebGL 绘制，依赖于着色器（shader）；
+WebGL 的发展最早要追溯到 2006 年，WebGL 起源于 Mozilla 员工弗拉基米尔·弗基西维奇的一项 Canvas 3D 实验项目，并于 2006 年首次展示了 Canvas 3D 的原型。这一技术在 2007 年底在 FireFox 和 Opera 浏览器中实现。2009 年初 Khronos Group 联盟创建了 WebGL 的工作组最初的工作成员包括 Apple、Google、Mozilla、Opera 等。2011 年 3 月 WebGL 1.0 规范发布，WebGL 2 规范的发展始于 2013 年，并于 2017 年 1 月最终完成，WebGL 2 的规范，首度在 Firefox 51、Chrome 56 和 Opera 43 中被支持。
 
-- 顶点着色器（Vertex shader）: 绘制每个定点都会调用一次；
-- 片段着色器（Fragment shader）: 每个片源（可以简单的理解为像素）都会调用一次；
+# Links
 
-```js
-/**
- * 使用WebGL画点
- * xu.lidong@qq.com
- * */
-
-// 顶点着色器源码
-var vertexShaderSrc = `
-void main(){
-    gl_Position = vec4(0.0, 0.0, 0.0, 1.0);// gl_Position 内置变量，表示点的位置，必须赋值
-    gl_PointSize = 10.0;// gl_PointSize 内置变量，表示点的大小（单位像素），可以不赋值，默认为1.0，，绘制单个点时才生效
-}`;
-
-// 片段着色器源码
-var fragmentShaderSrc = `
-void main(){
-    gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);// 内存变量，表示片元颜色RGBA
-}`;
-
-// 初始化使用的shader
-function initShader(gl) {
-  var vertexShader = gl.createShader(gl.VERTEX_SHADER); // 创建顶点着色器
-  gl.shaderSource(vertexShader, vertexShaderSrc); // 绑定顶点着色器源码
-  gl.compileShader(vertexShader); // 编译定点着色器
-
-  var fragmentShader = gl.createShader(gl.FRAGMENT_SHADER); // 创建片段着色器
-  gl.shaderSource(fragmentShader, fragmentShaderSrc); // 绑定片段着色器源码
-  gl.compileShader(fragmentShader); // 编译片段着色器
-
-  var shaderProgram = gl.createProgram(); // 创建着色器程序
-  gl.attachShader(shaderProgram, vertexShader); // 指定顶点着色器
-  gl.attachShader(shaderProgram, fragmentShader); // 指定片段着色色器
-  gl.linkProgram(shaderProgram); // 链接程序
-  gl.useProgram(shaderProgram); //使用着色器
-}
-
-function main() {
-  var canvas = document.getElementById("container");
-  var gl =
-    canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
-  initShader(gl); // 初始化着色器
-  gl.clearColor(0.0, 0.0, 0.0, 1.0); // 指定清空canvas的颜色
-  gl.clear(gl.COLOR_BUFFER_BIT); // 清空canvas
-  gl.drawArrays(gl.POINTS, 0, 1); // 画点
-}
-```
-
-向 shader 中传值有两种方式：
-
-- attribute 变量，传递与顶点相关的数组，只能在顶点着色器中使用；
-- uniform 变量，传递与顶点无关的数据；
-
-前面的代码将点的位置和大小都直接写在了顶点着色器中，现在将其改为由外面的程序传入。首先修改顶点着色器：
-
-```js
-const vertexShaderSrc = `
-    attribute vec4 a_Position;// 接收传入位置坐标，必须声明为全局
-    attribute float a_PointSize;// 接收传入位置坐标，必须声明为全局
-    void main(){
-        gl_Position = a_Position;// gl_Position 内置变量，表示点的位置，必须赋值
-        gl_PointSize = a_PointSize;// gl_PointSize 内置变量，表示点的大小（单位像素），可以不赋值，默认为1.0
-    }
-`;
-```
-
-然后在 initShader 的最后给这两个变量赋值：
-
-```js
-// 获取shader中的a_Position变量
-vaconstr a_Position = gl.getAttribLocation(shaderProgram, 'a_Position');
-// 给变量a_Position赋值
-gl.vertexAttrib4f(a_Position, 0.0, 0.0, 0.0, 1.0);
-
-// 获取shader中的a_PointSize变量
-vaconstr a_PointSize = gl.getAttribLocation(shaderProgram, 'a_PointSize');
-// a_PointSize
-gl.vertexAttrib1f(a_PointSize, 10.0);
-```
+- https://mp.weixin.qq.com/s/cV9P2Im7g0gw4E7sH-tTkg WebGL 概念和基础入门
