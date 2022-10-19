@@ -78,9 +78,12 @@
         
       - [4.6.6 相机与动画](/图形绘制/Three.js/相机与动画/README.md)
         
-      - [4.6.7 粒子系统](/图形绘制/Three.js/粒子系统/README.md)
+      - 4.6.7 碰撞检测
+        - [4.6.7.1 包围盒](/图形绘制/Three.js/碰撞检测/包围盒/README.md)
+          - [4.6.7.1.1 OBB](/图形绘制/Three.js/碰撞检测/包围盒/OBB.md)
+      - [4.6.8 粒子系统](/图形绘制/Three.js/粒子系统/README.md)
         
-      - [4.6.8 纹理](/图形绘制/Three.js/纹理/README.md)
+      - [4.6.9 纹理](/图形绘制/Three.js/纹理/README.md)
         
     - [4.7 WebGL](/图形绘制/WebGL/README.md)
       - [4.7.1 着色器](/图形绘制/WebGL/着色器.md)
