@@ -63,12 +63,13 @@
       - [4.5.1 动画](/图形绘制/SVG/动画.md)
       - [4.5.2 图形](/图形绘制/SVG/图形.md)
     - [4.6 Three.js](/图形绘制/Three.js/README.md)
-      - [4.6.1 React Three Fiber](/图形绘制/Three.js/React%20Three%20Fiber/README.md)
+      - [4.6.1 R3F](/图形绘制/Three.js/R3F/README.md)
         - 4.6.1.1 快速开始
-          - [4.6.1.1.1 交互与动画](/图形绘制/Three.js/React%20Three%20Fiber/快速开始/交互与动画.md)
-          - [4.6.1.1.2 加载模型](/图形绘制/Three.js/React%20Three%20Fiber/快速开始/加载模型.md)
+          - [4.6.1.1.1 交互与动画](/图形绘制/Three.js/R3F/快速开始/交互与动画.md)
+          - [4.6.1.1.2 加载模型](/图形绘制/Three.js/R3F/快速开始/加载模型.md)
         - 4.6.1.2 性能优化
-          - [4.6.1.2.1 扩展性能](/图形绘制/Three.js/React%20Three%20Fiber/性能优化/扩展性能.md)
+          - [4.6.1.2.1 Performance pitfalls](/图形绘制/Three.js/R3F/性能优化/Performance%20pitfalls.md)
+          - [4.6.1.2.2 扩展性能](/图形绘制/Three.js/R3F/性能优化/扩展性能.md)
       - 4.6.2 元素
         - [4.6.2.1 光源](/图形绘制/Three.js/元素/光源/README.md)
           - [4.6.2.1.1 DirectionalLight](/图形绘制/Three.js/元素/光源/DirectionalLight.md)
