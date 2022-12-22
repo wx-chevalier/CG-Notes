@@ -3,19 +3,18 @@
 用可重用的、独立的组件来声明性地构建你的场景，这些组件对状态做出反应，易于互动，并能参与到 React 的生态系统中。
 
 ```tsx
+import * as THREE from "three";
 import { createRoot } from "react-dom/client";
 import React, { useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, ThreeElements } from "@react-three/fiber";
 
-function Box(props) {
-  // This reference will give us direct access to the mesh
-  const mesh = useRef();
-  // Set up state for the hovered and active state
+function Box(props: ThreeElements["mesh"]) {
+  const mesh = useRef<THREE.Mesh>(null!);
   const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
-  // Subscribe this component to the render-loop, rotate the mesh every frame
+
   useFrame((state, delta) => (mesh.current.rotation.x += delta));
-  // Return view, these are regular three.js elements expressed in JSX
+
   return (
     <mesh
       {...props}

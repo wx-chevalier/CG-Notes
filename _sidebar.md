@@ -15,6 +15,8 @@
       - [2.6.1 R3F](/图形绘制库/Three.js/R3F/README.md)
         - 2.6.1.1 API
           - [2.6.1.1.1 Canvas](/图形绘制库/Three.js/R3F/API/Canvas.md)
+          - [2.6.1.1.2 Hooks](/图形绘制库/Three.js/R3F/API/Hooks.md)
+          - [2.6.1.1.3 对象、属性、构造参数](/图形绘制库/Three.js/R3F/API/对象、属性、构造参数.md)
         - 2.6.1.2 快速开始
           - [2.6.1.2.1 交互与动画](/图形绘制库/Three.js/R3F/快速开始/交互与动画.md)
           - [2.6.1.2.2 加载模型](/图形绘制库/Three.js/R3F/快速开始/加载模型.md)
