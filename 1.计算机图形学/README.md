@@ -6,4 +6,4 @@
 
 # CG VS CV
 
-![旷世 CG 与 CV 的对比](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20221229212938.png)
+![旷世 CG 与 CV 的对比](https://assets.ng-tech.icu/item/20221229212938.png)
