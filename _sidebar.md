@@ -50,7 +50,7 @@
       - [3.3.1 Advancing Front Surface Reconstruction](/2.数字几何处理/三维重建/Advancing%20Front%20Surface%20Reconstruction.md)
       - 3.3.2 NeRF [1]
         - 3.3.2.1 999.参考资料 [1]
-          - [3.3.2.1.1 用 Taichi 快速实现三维重建（NeRF）](/2.数字几何处理/三维重建/NeRF/999.参考资料/2023-用%20Taichi%20快速实现三维重建（NeRF）.md)
+          - [3.3.2.1.1 关于 3D AIGC 的务实探讨](/2.数字几何处理/三维重建/NeRF/999.参考资料/2023-关于%203D%20AIGC%20的务实探讨.md)
     - [3.4 数据交换标准 [3]](/2.数字几何处理/数据交换标准/README.md)
       - 3.4.1 GKSM [1]
         - [3.4.1.1 GKSM](/2.数字几何处理/数据交换标准/GKSM/GKSM.md)
