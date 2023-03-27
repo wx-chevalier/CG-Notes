@@ -61,73 +61,78 @@
     - [3.5 点云 [1]](/2.数字几何处理/点云/README.md)
       - [3.5.1 八叉树 [1]](/2.数字几何处理/点云/八叉树/README.md)
         - [3.5.1.1 八叉树 C++ 实现](/2.数字几何处理/点云/八叉树/八叉树%20C++%20实现.md)
-  - [4 3.图形绘制库 [7]](/3.图形绘制库/README.md)
-    - [4.1 Blender](/3.图形绘制库/Blender/README.md)
+  - 4 20.3D CV [1]
+    - 4.1 3D AIGC [1]
+      - 4.1.1 Point E [1]
+        - 4.1.1.1 999.参考资料 [1]
+          - [4.1.1.1.1 模型方法   创作能力很一般的 3D 模型 Point E](/20.3D%20CV/3D%20AIGC/Point-E/999.参考资料/2023-模型方法---创作能力很一般的%203D%20模型%20Point-E.md)
+  - [5 3.图形绘制库 [7]](/3.图形绘制库/README.md)
+    - [5.1 Blender](/3.图形绘制库/Blender/README.md)
       
-    - [4.2 Canvas [1]](/3.图形绘制库/Canvas/README.md)
-      - [4.2.1 图片处理](/3.图形绘制库/Canvas/图片处理.md)
-    - [4.3 Mo](/3.图形绘制库/Mo/README.md)
+    - [5.2 Canvas [1]](/3.图形绘制库/Canvas/README.md)
+      - [5.2.1 图片处理](/3.图形绘制库/Canvas/图片处理.md)
+    - [5.3 Mo](/3.图形绘制库/Mo/README.md)
       
-    - [4.4 OpenGL [1]](/3.图形绘制库/OpenGL/README.md)
-      - 4.4.1 999.参考资料 [1]
-        - [4.4.1.1 Introduction to GPUs with OpenGL](/3.图形绘制库/OpenGL/999.参考资料/2022-Introduction%20to%20GPUs%20with%20OpenGL.md)
-    - [4.5 SVG [2]](/3.图形绘制库/SVG/README.md)
-      - [4.5.1 动画](/3.图形绘制库/SVG/动画.md)
-      - [4.5.2 图形](/3.图形绘制库/SVG/图形.md)
-    - [4.6 Three.js [7]](/3.图形绘制库/Three.js/README.md)
-      - [4.6.1 R3F [3]](/3.图形绘制库/Three.js/R3F/README.md)
-        - 4.6.1.1 API [3]
-          - [4.6.1.1.1 Canvas](/3.图形绘制库/Three.js/R3F/API/Canvas.md)
-          - [4.6.1.1.2 Hooks](/3.图形绘制库/Three.js/R3F/API/Hooks.md)
-          - [4.6.1.1.3 对象、属性、构造参数](/3.图形绘制库/Three.js/R3F/API/对象、属性、构造参数.md)
-        - 4.6.1.2 快速开始 [2]
-          - [4.6.1.2.1 交互与动画](/3.图形绘制库/Three.js/R3F/快速开始/交互与动画.md)
-          - [4.6.1.2.2 加载模型](/3.图形绘制库/Three.js/R3F/快速开始/加载模型.md)
-        - 4.6.1.3 性能优化 [2]
-          - [4.6.1.3.1 Performance pitfalls](/3.图形绘制库/Three.js/R3F/性能优化/Performance%20pitfalls.md)
-          - [4.6.1.3.2 扩展性能](/3.图形绘制库/Three.js/R3F/性能优化/扩展性能.md)
-      - 4.6.2 元素 [4]
-        - [4.6.2.1 光源 [1]](/3.图形绘制库/Three.js/元素/光源/README.md)
-          - [4.6.2.1.1 DirectionalLight](/3.图形绘制库/Three.js/元素/光源/DirectionalLight.md)
-        - [4.6.2.2 几何体 [5]](/3.图形绘制库/Three.js/元素/几何体/README.md)
-          - [4.6.2.2.1 三维几何体](/3.图形绘制库/Three.js/元素/几何体/三维几何体.md)
-          - [4.6.2.2.2 三维文本](/3.图形绘制库/Three.js/元素/几何体/三维文本.md)
-          - [4.6.2.2.3 二元操作](/3.图形绘制库/Three.js/元素/几何体/二元操作.md)
-          - [4.6.2.2.4 二维几何体](/3.图形绘制库/Three.js/元素/几何体/二维几何体.md)
-          - [4.6.2.2.5 高级几何体](/3.图形绘制库/Three.js/元素/几何体/高级几何体.md)
-        - [4.6.2.3 材质](/3.图形绘制库/Three.js/元素/材质/README.md)
+    - [5.4 OpenGL [1]](/3.图形绘制库/OpenGL/README.md)
+      - 5.4.1 999.参考资料 [1]
+        - [5.4.1.1 Introduction to GPUs with OpenGL](/3.图形绘制库/OpenGL/999.参考资料/2022-Introduction%20to%20GPUs%20with%20OpenGL.md)
+    - [5.5 SVG [2]](/3.图形绘制库/SVG/README.md)
+      - [5.5.1 动画](/3.图形绘制库/SVG/动画.md)
+      - [5.5.2 图形](/3.图形绘制库/SVG/图形.md)
+    - [5.6 Three.js [7]](/3.图形绘制库/Three.js/README.md)
+      - [5.6.1 R3F [3]](/3.图形绘制库/Three.js/R3F/README.md)
+        - 5.6.1.1 API [3]
+          - [5.6.1.1.1 Canvas](/3.图形绘制库/Three.js/R3F/API/Canvas.md)
+          - [5.6.1.1.2 Hooks](/3.图形绘制库/Three.js/R3F/API/Hooks.md)
+          - [5.6.1.1.3 对象、属性、构造参数](/3.图形绘制库/Three.js/R3F/API/对象、属性、构造参数.md)
+        - 5.6.1.2 快速开始 [2]
+          - [5.6.1.2.1 交互与动画](/3.图形绘制库/Three.js/R3F/快速开始/交互与动画.md)
+          - [5.6.1.2.2 加载模型](/3.图形绘制库/Three.js/R3F/快速开始/加载模型.md)
+        - 5.6.1.3 性能优化 [2]
+          - [5.6.1.3.1 Performance pitfalls](/3.图形绘制库/Three.js/R3F/性能优化/Performance%20pitfalls.md)
+          - [5.6.1.3.2 扩展性能](/3.图形绘制库/Three.js/R3F/性能优化/扩展性能.md)
+      - 5.6.2 元素 [4]
+        - [5.6.2.1 光源 [1]](/3.图形绘制库/Three.js/元素/光源/README.md)
+          - [5.6.2.1.1 DirectionalLight](/3.图形绘制库/Three.js/元素/光源/DirectionalLight.md)
+        - [5.6.2.2 几何体 [5]](/3.图形绘制库/Three.js/元素/几何体/README.md)
+          - [5.6.2.2.1 三维几何体](/3.图形绘制库/Three.js/元素/几何体/三维几何体.md)
+          - [5.6.2.2.2 三维文本](/3.图形绘制库/Three.js/元素/几何体/三维文本.md)
+          - [5.6.2.2.3 二元操作](/3.图形绘制库/Three.js/元素/几何体/二元操作.md)
+          - [5.6.2.2.4 二维几何体](/3.图形绘制库/Three.js/元素/几何体/二维几何体.md)
+          - [5.6.2.2.5 高级几何体](/3.图形绘制库/Three.js/元素/几何体/高级几何体.md)
+        - [5.6.2.3 材质](/3.图形绘制库/Three.js/元素/材质/README.md)
           
-        - [4.6.2.4 纹理](/3.图形绘制库/Three.js/元素/纹理/README.md)
+        - [5.6.2.4 纹理](/3.图形绘制库/Three.js/元素/纹理/README.md)
           
-      - 4.6.3 坐标系与场景图 [2]
-        - [4.6.3.1 包围盒 [1]](/3.图形绘制库/Three.js/坐标系与场景图/包围盒/README.md)
-          - [4.6.3.1.1 OBB](/3.图形绘制库/Three.js/坐标系与场景图/包围盒/OBB.md)
-        - 4.6.3.2 变换 [1]
-          - [4.6.3.2.1 转换矩阵](/3.图形绘制库/Three.js/坐标系与场景图/变换/转换矩阵.md)
-      - [4.6.4 快速开始 [3]](/3.图形绘制库/Three.js/快速开始/README.md)
-        - [4.6.4.1 Hello Cube](/3.图形绘制库/Three.js/快速开始/Hello%20Cube.md)
-        - [4.6.4.2 响应式设计](/3.图形绘制库/Three.js/快速开始/响应式设计.md)
-        - [4.6.4.3 按需渲染](/3.图形绘制库/Three.js/快速开始/按需渲染.md)
-      - 4.6.5 插件系统 [1]
-        - [4.6.5.1 模型加载 [1]](/3.图形绘制库/Three.js/插件系统/模型加载/README.md)
-          - [4.6.5.1.1 glTF [1]](/3.图形绘制库/Three.js/插件系统/模型加载/glTF/README.md)
-            - 4.6.5.1.1.1 999.参考资料 [1]
-              - [4.6.5.1.1.1.1 凹凸嫚 3D 性能优化 glTF 文件压缩](/3.图形绘制库/Three.js/插件系统/模型加载/glTF/999.参考资料/2021-凹凸嫚-3D%20性能优化%20glTF%20文件压缩.md)
-      - [4.6.6 渲染 [2]](/3.图形绘制库/Three.js/渲染/README.md)
-        - [4.6.6.1 动画](/3.图形绘制库/Three.js/渲染/动画/README.md)
+      - 5.6.3 坐标系与场景图 [2]
+        - [5.6.3.1 包围盒 [1]](/3.图形绘制库/Three.js/坐标系与场景图/包围盒/README.md)
+          - [5.6.3.1.1 OBB](/3.图形绘制库/Three.js/坐标系与场景图/包围盒/OBB.md)
+        - 5.6.3.2 变换 [1]
+          - [5.6.3.2.1 转换矩阵](/3.图形绘制库/Three.js/坐标系与场景图/变换/转换矩阵.md)
+      - [5.6.4 快速开始 [3]](/3.图形绘制库/Three.js/快速开始/README.md)
+        - [5.6.4.1 Hello Cube](/3.图形绘制库/Three.js/快速开始/Hello%20Cube.md)
+        - [5.6.4.2 响应式设计](/3.图形绘制库/Three.js/快速开始/响应式设计.md)
+        - [5.6.4.3 按需渲染](/3.图形绘制库/Three.js/快速开始/按需渲染.md)
+      - 5.6.5 插件系统 [1]
+        - [5.6.5.1 模型加载 [1]](/3.图形绘制库/Three.js/插件系统/模型加载/README.md)
+          - [5.6.5.1.1 glTF [1]](/3.图形绘制库/Three.js/插件系统/模型加载/glTF/README.md)
+            - 5.6.5.1.1.1 999.参考资料 [1]
+              - [5.6.5.1.1.1.1 凹凸嫚 3D 性能优化 glTF 文件压缩](/3.图形绘制库/Three.js/插件系统/模型加载/glTF/999.参考资料/2021-凹凸嫚-3D%20性能优化%20glTF%20文件压缩.md)
+      - [5.6.6 渲染 [2]](/3.图形绘制库/Three.js/渲染/README.md)
+        - [5.6.6.1 动画](/3.图形绘制库/Three.js/渲染/动画/README.md)
           
-        - [4.6.6.2 相机](/3.图形绘制库/Three.js/渲染/相机/README.md)
+        - [5.6.6.2 相机](/3.图形绘制库/Three.js/渲染/相机/README.md)
           
-      - 4.6.7 运动 [2]
-        - [4.6.7.1 碰撞检测](/3.图形绘制库/Three.js/运动/碰撞检测/README.md)
+      - 5.6.7 运动 [2]
+        - [5.6.7.1 碰撞检测](/3.图形绘制库/Three.js/运动/碰撞检测/README.md)
           
-        - [4.6.7.2 粒子系统](/3.图形绘制库/Three.js/运动/粒子系统/README.md)
+        - [5.6.7.2 粒子系统](/3.图形绘制库/Three.js/运动/粒子系统/README.md)
           
-    - [4.7 WebGL [1]](/3.图形绘制库/WebGL/README.md)
-      - [4.7.1 着色器](/3.图形绘制库/WebGL/着色器.md)
-  - 5 999.参考资料 [2]
-    - [5.1 GAMES101 课程笔记](/999.参考资料/GAMES101%20课程笔记/README.md)
+    - [5.7 WebGL [1]](/3.图形绘制库/WebGL/README.md)
+      - [5.7.1 着色器](/3.图形绘制库/WebGL/着色器.md)
+  - 6 999.参考资料 [2]
+    - [6.1 GAMES101 课程笔记](/999.参考资料/GAMES101%20课程笔记/README.md)
       
-    - [5.2 Polygon Mesh Processing](/999.参考资料/Polygon%20Mesh%20Processing/README.md)
+    - [6.2 Polygon Mesh Processing](/999.参考资料/Polygon%20Mesh%20Processing/README.md)
       
-  - [6 INTRODUCTION](/INTRODUCTION.md)
+  - [7 INTRODUCTION](/INTRODUCTION.md)
