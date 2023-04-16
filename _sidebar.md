@@ -139,8 +139,8 @@
       - [6.2.1 3D 模型检索](/20.3D%20CV/3D%20模型识别/3D%20模型检索.md)
       - [6.2.2 SIS](/20.3D%20CV/3D%20模型识别/SIS.md)
   - 7 99.参考资料 [2]
-    - [7.1 GAMES101 课程笔记](/99.参考资料/GAMES101%20课程笔记/README.md)
-      
+    - [7.1 GAMES101 课程笔记 [1]](/99.参考资料/GAMES101%20课程笔记/README.md)
+      - [7.1.1 01.Overview of Computer Graphics](/99.参考资料/GAMES101%20课程笔记/01.Overview%20of%20Computer%20Graphics.md)
     - [7.2 Polygon Mesh Processing](/99.参考资料/Polygon%20Mesh%20Processing/README.md)
       
   - [8 INTRODUCTION](/INTRODUCTION.md)
