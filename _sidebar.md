@@ -146,7 +146,7 @@
     - 6.2 3D 模型识别 [2]
       - [6.2.1 3D 模型检索](/20.3D%20CV/3D%20模型识别/3D%20模型检索.md)
       - [6.2.2 SIS](/20.3D%20CV/3D%20模型识别/SIS.md)
-  - 7 99.参考资料 [2]
+  - 7 99.参考资料 [3]
     - [7.1 GAMES101 课程笔记 [11]](/99.参考资料/GAMES101%20课程笔记/README.md)
       - [7.1.1 01.Overview of Computer Graphics](/99.参考资料/GAMES101%20课程笔记/01.Overview%20of%20Computer%20Graphics.md)
       - [7.1.2 02.Review of Linear Algebra](/99.参考资料/GAMES101%20课程笔记/02.Review%20of%20Linear%20Algebra.md)
@@ -159,6 +159,8 @@
       - [7.1.9 18.Advanced Topics in Rendering](/99.参考资料/GAMES101%20课程笔记/18.Advanced%20Topics%20in%20Rendering.md)
       - [7.1.10 20.Cameras, Lenses and Light Fields](/99.参考资料/GAMES101%20课程笔记/19-20.Cameras,%20Lenses%20and%20Light%20Fields.md)
       - [7.1.11 22.Animation](/99.参考资料/GAMES101%20课程笔记/21-22.Animation.md)
-    - [7.2 Polygon Mesh Processing](/99.参考资料/Polygon%20Mesh%20Processing/README.md)
+    - [7.2 Learn OpenGL 笔记](/99.参考资料/Learn%20OpenGL%20笔记/README.md)
+      
+    - [7.3 Polygon Mesh Processing](/99.参考资料/Polygon%20Mesh%20Processing/README.md)
       
   - [8 INTRODUCTION](/INTRODUCTION.md)
