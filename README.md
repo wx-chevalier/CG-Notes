@@ -7,12 +7,12 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/wx-chevalier/CG-Series">
+  <a href="https://github.com/wx-chevalier/CG-Notes">
     <img src="https://assets.ng-tech.icu/item/header.svg" alt="Logo" style="width: 100vw;height: 400px" />
   </a>
 
   <p align="center">
-    <a href="https://ng-tech.icu/books/CG-Series"><strong>在线阅读 >> </strong></a>
+    <a href="https://ng-tech.icu/books/CG-Notes"><strong>在线阅读 >> </strong></a>
     <br />
     <br />
     <a href="https://github.com/wx-chevalier">代码案例（cg-examples）</a>
@@ -30,9 +30,9 @@
 
 # Nav | 关联导航
 
-- 本篇剥离自 [Frontend-Series](https://github.com/wx-chevalier/Frontend-Series?q=)，更多 Web 开发相关内容请参阅[《Web-Series](https://github.com/wx-chevalier/Web-Series?q=)》。
+- 本篇剥离自 [Frontend-Notes](https://github.com/wx-chevalier/Frontend-Notes?q=)，更多 Web 开发相关内容请参阅[《Web-Notes](https://github.com/wx-chevalier/Web-Notes?q=)》。
 
-- 计算机视觉与深度学习相结合的内容请参阅[《DeepLearning-Series](https://github.com/wx-chevalier/DeepLearning-Series?q=)》
+- 计算机视觉与深度学习相结合的内容请参阅[《DeepLearning-Notes](https://github.com/wx-chevalier/DeepLearning-Notes?q=)》
 
 # About | 关于
 
@@ -65,13 +65,13 @@ Contributions are what make the open source community such an amazing place to b
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/wx-chevalier/CG-Series.svg?style=flat-square
-[contributors-url]: https://github.com/wx-chevalier/CG-Series/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/wx-chevalier/CG-Series.svg?style=flat-square
-[forks-url]: https://github.com/wx-chevalier/CG-Series/network/members
-[stars-shield]: https://img.shields.io/github/stars/wx-chevalier/CG-Series.svg?style=flat-square
-[stars-url]: https://github.com/wx-chevalier/CG-Series/stargazers
-[issues-shield]: https://img.shields.io/github/issues/wx-chevalier/CG-Series.svg?style=flat-square
-[issues-url]: https://github.com/wx-chevalier/CG-Series/issues
-[license-shield]: https://img.shields.io/github/license/wx-chevalier/CG-Series.svg?style=flat-square
-[license-url]: https://github.com/wx-chevalier/CG-Series/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/wx-chevalier/CG-Notes.svg?style=flat-square
+[contributors-url]: https://github.com/wx-chevalier/CG-Notes/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/wx-chevalier/CG-Notes.svg?style=flat-square
+[forks-url]: https://github.com/wx-chevalier/CG-Notes/network/members
+[stars-shield]: https://img.shields.io/github/stars/wx-chevalier/CG-Notes.svg?style=flat-square
+[stars-url]: https://github.com/wx-chevalier/CG-Notes/stargazers
+[issues-shield]: https://img.shields.io/github/issues/wx-chevalier/CG-Notes.svg?style=flat-square
+[issues-url]: https://github.com/wx-chevalier/CG-Notes/issues
+[license-shield]: https://img.shields.io/github/license/wx-chevalier/CG-Notes.svg?style=flat-square
+[license-url]: https://github.com/wx-chevalier/CG-Notes/blob/master/LICENSE.txt
