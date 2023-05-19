@@ -153,8 +153,9 @@
       - [3.3.4 WebGL [1]](/03.图形绘制库/Web%20图形绘制/WebGL/README.md)
         - [3.3.4.1 着色器](/03.图形绘制库/Web%20图形绘制/WebGL/着色器.md)
       - [3.3.5 WebGPU [1]](/03.图形绘制库/Web%20图形绘制/WebGPU/README.md)
-        - 3.3.5.1 99.参考资料 [1]
+        - 3.3.5.1 99.参考资料 [2]
           - [3.3.5.1.1 从 WebGL 到 WebGPU，网页图形的全新时代](/03.图形绘制库/Web%20图形绘制/WebGPU/99.参考资料/2021-从%20WebGL%20到%20WebGPU，网页图形的全新时代.md)
+          - [3.3.5.1.2 From 0 to glTF with WebGPU](/03.图形绘制库/Web%20图形绘制/WebGPU/99.参考资料/2023-From%200%20to%20glTF%20with%20WebGPU.md)
   - [4 10.图像与媒体 [7]](/10.图像与媒体/README.md)
     - [4.1 FFmpeg [1]](/10.图像与媒体/FFmpeg/README.md)
       - [4.1.1 FFplay](/10.图像与媒体/FFmpeg/FFplay.md)
