@@ -39,7 +39,7 @@ const App = () => (
 
 # Custom Canvas
 
-R3F 可以渲染到一个根，类似于 react-dom 和所有其他 React 渲染器的工作方式。这允许你减少 react-dom (~40kb)、 react-use-measure (~3kb)，如果你不需要它们，还可以减少 pointer-events (~7kb)（否则你需要明确导入事件并将它们添加到配置中）。根的选项和属性与 Canvas 相同，但你要负责调整它的大小。它需要一个现有的 DOM <canvas> 对象，并将其渲染进去。
+R3F 可以渲染到一个根，类似于 react-dom 和所有其他 React 渲染器的工作方式。这允许你减少 react-dom (~40kb)、react-use-measure (~3kb)，如果你不需要它们，还可以减少 pointer-events (~7kb)（否则你需要明确导入事件并将它们添加到配置中）。根的选项和属性与 Canvas 相同，但你要负责调整它的大小。它需要一个现有的 DOM <canvas> 对象，并将其渲染进去。
 
 ## CreateRoot
 
