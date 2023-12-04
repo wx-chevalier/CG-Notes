@@ -208,9 +208,9 @@
   - 7 99~参考资料 [3]
     - [7.1 GAMES101 课程笔记 [11]](/99~参考资料/GAMES101%20课程笔记/README.md)
       - [7.1.1 01.Overview of Computer Graphics](/99~参考资料/GAMES101%20课程笔记/01.Overview%20of%20Computer%20Graphics.md)
-      - [7.1.2 02.Review of Linear Algebra](/99~参考资料/GAMES101%20课程笔记/02.Review%20of%20Linear%20Algebra.md)
+      - [7.1.2 02~Review of Linear Algebra](/99~参考资料/GAMES101%20课程笔记/02~Review%20of%20Linear%20Algebra.md)
       - [7.1.3 04.Transformation](/99~参考资料/GAMES101%20课程笔记/03-04.Transformation.md)
-      - [7.1.4 06.Rasterization](/99~参考资料/GAMES101%20课程笔记/05-06.Rasterization.md)
+      - [7.1.4 06~Rasterization](/99~参考资料/GAMES101%20课程笔记/05-06~Rasterization.md)
       - [7.1.5 09.Shading, Pipeline and Texture Mapping](/99~参考资料/GAMES101%20课程笔记/07-09.Shading,%20Pipeline%20and%20Texture%20Mapping.md)
       - [7.1.6 12.Geometry](/99~参考资料/GAMES101%20课程笔记/10-12.Geometry.md)
       - [7.1.7 15.Ray Tracing](/99~参考资料/GAMES101%20课程笔记/13-15.Ray%20Tracing.md)
