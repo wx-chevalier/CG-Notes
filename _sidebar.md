@@ -224,6 +224,6 @@
       - [8.1.11 22.Animation](/99~参考资料/GAMES101%20课程笔记/21-22.Animation.md)
     - [8.2 Learn OpenGL 笔记](/99~参考资料/Learn%20OpenGL%20笔记/README.md)
       
-    - [8.3 Polygon Mesh Processing](/99~参考资料/Polygon%20Mesh%20Processing/README.md)
+    - [8.3 《Polygon Mesh Processing》](/99~参考资料/《Polygon%20Mesh%20Processing》/README.md)
       
   - [9 INTRODUCTION](/INTRODUCTION.md)
