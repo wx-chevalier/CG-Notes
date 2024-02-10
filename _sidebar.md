@@ -209,21 +209,23 @@
     - 7.3 3D 模型识别 [1]
       - [7.3.1 99~参考资料](/20~3D%20CV/3D%20模型识别/99~参考资料/README.md)
         
-  - 8 99~参考资料 [3]
-    - [8.1 GAMES101 课程笔记 [11]](/99~参考资料/GAMES101%20课程笔记/README.md)
-      - [8.1.1 01.Overview of Computer Graphics](/99~参考资料/GAMES101%20课程笔记/01.Overview%20of%20Computer%20Graphics.md)
-      - [8.1.2 02~Review of Linear Algebra](/99~参考资料/GAMES101%20课程笔记/02~Review%20of%20Linear%20Algebra.md)
-      - [8.1.3 04.Transformation](/99~参考资料/GAMES101%20课程笔记/03-04.Transformation.md)
-      - [8.1.4 06~Rasterization](/99~参考资料/GAMES101%20课程笔记/05-06~Rasterization.md)
-      - [8.1.5 09.Shading, Pipeline and Texture Mapping](/99~参考资料/GAMES101%20课程笔记/07-09.Shading,%20Pipeline%20and%20Texture%20Mapping.md)
-      - [8.1.6 12.Geometry](/99~参考资料/GAMES101%20课程笔记/10-12.Geometry.md)
-      - [8.1.7 15.Ray Tracing](/99~参考资料/GAMES101%20课程笔记/13-15.Ray%20Tracing.md)
-      - [8.1.8 17.Materials and Appearances](/99~参考资料/GAMES101%20课程笔记/17.Materials%20and%20Appearances.md)
-      - [8.1.9 18.Advanced Topics in Rendering](/99~参考资料/GAMES101%20课程笔记/18.Advanced%20Topics%20in%20Rendering.md)
-      - [8.1.10 20.Cameras, Lenses and Light Fields](/99~参考资料/GAMES101%20课程笔记/19-20.Cameras,%20Lenses%20and%20Light%20Fields.md)
-      - [8.1.11 22.Animation](/99~参考资料/GAMES101%20课程笔记/21-22.Animation.md)
-    - [8.2 Learn OpenGL 笔记](/99~参考资料/Learn%20OpenGL%20笔记/README.md)
+  - 8 99~参考资料 [4]
+    - [8.1 2023~孔令德~《计算机图形学（微课版）》](/99~参考资料/2023~孔令德~《计算机图形学（微课版）》/README.md)
       
-    - [8.3 《Polygon Mesh Processing》](/99~参考资料/《Polygon%20Mesh%20Processing》/README.md)
+    - [8.2 GAMES101 课程笔记 [11]](/99~参考资料/GAMES101%20课程笔记/README.md)
+      - [8.2.1 01.Overview of Computer Graphics](/99~参考资料/GAMES101%20课程笔记/01.Overview%20of%20Computer%20Graphics.md)
+      - [8.2.2 02~Review of Linear Algebra](/99~参考资料/GAMES101%20课程笔记/02~Review%20of%20Linear%20Algebra.md)
+      - [8.2.3 04.Transformation](/99~参考资料/GAMES101%20课程笔记/03-04.Transformation.md)
+      - [8.2.4 06~Rasterization](/99~参考资料/GAMES101%20课程笔记/05-06~Rasterization.md)
+      - [8.2.5 09.Shading, Pipeline and Texture Mapping](/99~参考资料/GAMES101%20课程笔记/07-09.Shading,%20Pipeline%20and%20Texture%20Mapping.md)
+      - [8.2.6 12.Geometry](/99~参考资料/GAMES101%20课程笔记/10-12.Geometry.md)
+      - [8.2.7 15.Ray Tracing](/99~参考资料/GAMES101%20课程笔记/13-15.Ray%20Tracing.md)
+      - [8.2.8 17.Materials and Appearances](/99~参考资料/GAMES101%20课程笔记/17.Materials%20and%20Appearances.md)
+      - [8.2.9 18.Advanced Topics in Rendering](/99~参考资料/GAMES101%20课程笔记/18.Advanced%20Topics%20in%20Rendering.md)
+      - [8.2.10 20.Cameras, Lenses and Light Fields](/99~参考资料/GAMES101%20课程笔记/19-20.Cameras,%20Lenses%20and%20Light%20Fields.md)
+      - [8.2.11 22.Animation](/99~参考资料/GAMES101%20课程笔记/21-22.Animation.md)
+    - [8.3 Learn OpenGL 笔记](/99~参考资料/Learn%20OpenGL%20笔记/README.md)
+      
+    - [8.4 《Polygon Mesh Processing》](/99~参考资料/《Polygon%20Mesh%20Processing》/README.md)
       
   - [9 INTRODUCTION](/INTRODUCTION.md)
