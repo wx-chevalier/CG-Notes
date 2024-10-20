@@ -90,7 +90,7 @@ $$
 
 为了解决这个问题，我们将线性插值的方法向前推进了一步，即进行多次线性插值。这样做我们就得到了 Bezier 曲线（读作贝塞尔）的几何结构。这里插播一个历史趣闻，Bezier 曲线是由 Paul de Casteljau 和 Pierre Bezier 独立开发的，并应用于法国的汽车工业。这个曲线之所以被称为 Bezier 曲线，因为 Bezier 在 de Casteljau 之前就公开了他的研究工作，尽管 de Casteljau 在 Bezier 之前就已经写下了他的技术报告\[458]。
 
-![图17.4：多次线性插值可以得到一条Bezier曲线。这条曲线由三个控制点 \mathbf{a} 、 \mathbf{b} 、 \mathbf{c} 进行定义。假设我们想要找到参数 t = 1/3 时曲线上的点，我们首先在点 \mathbf{a} 和点 \mathbf{b} 之间进行线性插值得到点 \mathbf{d} 。接下来，从点 \mathbf{b} 和点 \mathbf{c} 中插值点 \mathbf{e} 。最后在点 \mathbf{e} 和点 \mathbf{d} 之间再次进行线性插值，可以得到最终想要的点 \mathbf{p}(1/3)=\mathbf{f} 。](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-17/202309082014869.png "图17.4：多次线性插值可以得到一条Bezier曲线。这条曲线由三个控制点 \\mathbf{a} 、 \mathbf{b} 、 \mathbf{c} 进行定义。假设我们想要找到参数 t = 1/3 时曲线上的点，我们首先在点 \mathbf{a} 和点 \mathbf{b} 之间进行线性插值得到点 \mathbf{d} 。接下来，从点 \mathbf{b} 和点 \mathbf{c} 中插值点 \mathbf{e} 。最后在点 \mathbf{e} 和点 \mathbf{d} 之间再次进行线性插值，可以得到最终想要的点 \mathbf{p}(1/3)=\mathbf{f} 。")
+![图17.4：多次线性插值可以得到一条Bezier曲线。这条曲线由三个控制点 \mathbf{a}、\mathbf{b}、\mathbf{c} 进行定义。假设我们想要找到参数 t = 1/3 时曲线上的点，我们首先在点 \mathbf{a} 和点 \mathbf{b} 之间进行线性插值得到点 \mathbf{d} 。接下来，从点 \mathbf{b} 和点 \mathbf{c} 中插值点 \mathbf{e} 。最后在点 \mathbf{e} 和点 \mathbf{d} 之间再次进行线性插值，可以得到最终想要的点 \mathbf{p}(1/3)=\mathbf{f} 。](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-17/202309082014869.png "图17.4：多次线性插值可以得到一条Bezier曲线。这条曲线由三个控制点 \\mathbf{a}、\mathbf{b}、\mathbf{c} 进行定义。假设我们想要找到参数 t = 1/3 时曲线上的点，我们首先在点 \mathbf{a} 和点 \mathbf{b} 之间进行线性插值得到点 \mathbf{d} 。接下来，从点 \mathbf{b} 和点 \mathbf{c} 中插值点 \mathbf{e} 。最后在点 \mathbf{e} 和点 \mathbf{d} 之间再次进行线性插值，可以得到最终想要的点 \mathbf{p}(1/3)=\mathbf{f} 。")
 
 首先，为了能够重复进行插值，我们必须添加更多的点。例如：可以使用三个点$\mathbf{a}$、$\mathbf{b}$、$\mathbf{c}$，它们被称为控制点（control point）。假设我们想找到点$\mathbf{p}(1/3)$，也就是$t = 1/3$时曲线上的点。我们使用$t = 1/3$，对$\mathbf{a} \& \mathbf{b}$和$\mathbf{b} \& \mathbf{c}$分别进行线性插值，并计算出两个新的顶点$\mathbf{d}$和$\mathbf{e}$，如图 17.4 所示。最后，我们再次使用$t = 1/3$，对点$\mathbf{d}$和点$\mathbf{e}$进行线性插值来计算点$\mathbf{f}$。这里我们定义$\mathbf{p}(t)=\mathbf{f}$，使用这种方法，我们可以得到以下数学关系：
 
@@ -587,7 +587,7 @@ $$
 
 这种构造方式消耗了许多设置控制点的自由度，当我们将四个面片（共用一个拐角点）拼接在一起时，可以更加清楚地看到这一点。图 17.26 展示了这个构造过程，图的右侧展示了构造的结果，并展示了共享控制点（公共拐角点）周围的 8 个控制点位置。这 9 个点必须位于在同一个平面上，并且这 9 个点本身还必须能够形成一个双线性面片，如图 17.17 所示。如果想要让这个拐角点满足$G^1$连续性（只在这个拐角点处满足），则令这个 9 个控制点共面即可。这样不会损失那么多的自由度。
 
-![图17.26：（a）将 F 、 G 、 H 、 I 四个面片拼接在一起，所有面片共用同一个拐角。（b）在竖直方向上，这三组点（位于加粗黑线上）必须具有相同的比例 k ；（b）中没有显示出这种关系，请观察最右边的图。（c）与（b）类似，在水平方向上，这两个面片上的每组控制点都必须具有相同的比例 l 。（d）将这四个面片缝合在一起时，它们在垂直方向上必须具有同一个比例 k ，在水平方向上必须具有同一个比例 l 。（e）展示了这样做之后的结果，其中最接近（包括）共享控制点的9个控制点，它们具有正确计算的比例。](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-17/202309091642527.png "图17.26：（a）将 F 、 G 、 H 、 I 四个面片拼接在一起，所有面片共用同一个拐角。（b）在竖直方向上，这三组点（位于加粗黑线上）必须具有相同的比例 k ；（b）中没有显示出这种关系，请观察最右边的图。（c）与（b）类似，在水平方向上，这两个面片上的每组控制点都必须具有相同的比例 l 。（d）将这四个面片缝合在一起时，它们在垂直方向上必须具有同一个比例 k ，在水平方向上必须具有同一个比例 l 。（e）展示了这样做之后的结果，其中最接近（包括）共享控制点的9个控制点，它们具有正确计算的比例。")
+![图17.26：（a）将 F、G、H、I 四个面片拼接在一起，所有面片共用同一个拐角。（b）在竖直方向上，这三组点（位于加粗黑线上）必须具有相同的比例 k ；（b）中没有显示出这种关系，请观察最右边的图。（c）与（b）类似，在水平方向上，这两个面片上的每组控制点都必须具有相同的比例 l 。（d）将这四个面片缝合在一起时，它们在垂直方向上必须具有同一个比例 k ，在水平方向上必须具有同一个比例 l 。（e）展示了这样做之后的结果，其中最接近（包括）共享控制点的9个控制点，它们具有正确计算的比例。](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-17/202309091642527.png "图17.26：（a）将 F、G、H、I 四个面片拼接在一起，所有面片共用同一个拐角。（b）在竖直方向上，这三组点（位于加粗黑线上）必须具有相同的比例 k ；（b）中没有显示出这种关系，请观察最右边的图。（c）与（b）类似，在水平方向上，这两个面片上的每组控制点都必须具有相同的比例 l 。（d）将这四个面片缝合在一起时，它们在垂直方向上必须具有同一个比例 k ，在水平方向上必须具有同一个比例 l 。（e）展示了这样做之后的结果，其中最接近（包括）共享控制点的9个控制点，它们具有正确计算的比例。")
 
 Bezier 三角形的连续性通常要更加复杂，Bezier 面片和 Bezier 三角形的$G^1$连续性也十分复杂\[458, 777]。当构造一个具有许多 Bezier 曲面的复杂对象时，通常很难保证它在所有边界上都获得合理的连续性。为了解决这个问题，一种方法是转向使用细分曲面，我们将在章节 17.5 中进行讨论。
 
@@ -644,6 +644,7 @@ $$
 $$
 \mathbf{n}_{110}^{\prime}=\mathbf{n}_{200}+\mathbf{n}_{020}-2 \frac{\left(\mathbf{p}_{030}-\mathbf{p}_{300}\right) \cdot\left(\mathbf{n}_{200}+\mathbf{n}_{020}\right)}{\left(\mathbf{p}_{030}-\mathbf{p}_{300}\right) \cdot\left(\mathbf{p}_{030}-\mathbf{p}_{300}\right)}\left(\mathbf{p}_{030}-\mathbf{p}_{300}\right)
 \tag{17.47}
+
 
 $$
 
@@ -730,7 +731,7 @@ $$
 
 这些方程看起来都很生硬，需要对其进行一些解释。其中球面（sphere）就是点$\mathbf{p}$到原点的距离，然后再减去半径。所以如果点$\mathbf{p}$位于半径为$r$的球面上，那么$f_{s}(\mathbf{p}, r)=0$；否则，将会返回一个带符号的距离值，负数代表点$\mathbf{p}$位于球体内部，正数代表点$\mathbf{p}$位于球体外部。因此，这些函数有时也会被称为符号距离函数（signed distance function，SDF）。平面$f_{x z}(\mathbf{p})$实际上就是点$\mathbf{p}$的$y$坐标，即$y$轴正半轴的那一侧。对于圆角方框（rounded box）的表达式，我们假设向量的绝对值（$|\mathbf{p}|$）和最大值是按照每个分量进行计算的。其中的$\mathbf{d}$是方框的半边向量，如图 17.34 所示，图中还对这个公式进行了文字说明。如果想要获得一个非圆角方框（non-rounded box），只需设置$r = 0$即可。
 
-![图17.34：左：非圆角方框，其符号距离函数为 \|\max (|\mathbf{p}|-\mathbf{d}, 0)\| ，其中点 \mathbf{p} 为待测点，向量 \mathbf{d} 的代表了box的半边长度。请注意，绝对值运算 |\mathbf{p}| 使得其余的计算都发生在右上角象限中（这里使用2D进行说明）。 |\mathbf{p}|-\mathbf{d} 意味着，如果点 \mathbf{p} 沿 x 轴方向上位于box内部，那么 \left|p_{x}\right|-d_{x} 将会是一个负值，其他轴向上也是如此。这里只有正值会被保留，而负值会被 \max() 限制为0。因此， \|\max (|\mathbf{p}|-\mathbf{d}, 0)\| 实际上计算了点 \mathbf{p} 到box边缘的最近距离，这意味着如果在计算 \max() 后有多个值为正数，那么box外的符号距离场将会变成圆角。右：一个非圆角方框减去 r ，可以得到一个圆角方框，即让这个box向所有方向上都扩展半径 r 的长度。](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-17/202309101153442.png "图17.34：左：非圆角方框，其符号距离函数为 \\|\max (|\mathbf{p}|-\mathbf{d}, 0)\| ，其中点 \mathbf{p} 为待测点，向量 \mathbf{d} 的代表了box的半边长度。请注意，绝对值运算 |\mathbf{p}| 使得其余的计算都发生在右上角象限中（这里使用2D进行说明）。 |\mathbf{p}|-\mathbf{d} 意味着，如果点 \mathbf{p} 沿 x 轴方向上位于box内部，那么 \left|p_{x}\right|-d_{x} 将会是一个负值，其他轴向上也是如此。这里只有正值会被保留，而负值会被 \max() 限制为0。因此， \|\max (|\mathbf{p}|-\mathbf{d}, 0)\| 实际上计算了点 \mathbf{p} 到box边缘的最近距离，这意味着如果在计算 \max() 后有多个值为正数，那么box外的符号距离场将会变成圆角。右：一个非圆角方框减去 r ，可以得到一个圆角方框，即让这个box向所有方向上都扩展半径 r 的长度。")
+![图17.34：左：非圆角方框，其符号距离函数为 |\max (|\mathbf{p}|-\mathbf{d}, 0)| ，其中点 \mathbf{p} 为待测点，向量 \mathbf{d} 的代表了box的半边长度。请注意，绝对值运算 |\mathbf{p}| 使得其余的计算都发生在右上角象限中（这里使用2D进行说明）。 |\mathbf{p}|-\mathbf{d} 意味着，如果点 \mathbf{p} 沿 x 轴方向上位于box内部，那么 \left|p_{x}\right|-d_{x} 将会是一个负值，其他轴向上也是如此。这里只有正值会被保留，而负值会被 \max() 限制为0。因此， |\max (|\mathbf{p}|-\mathbf{d}, 0)| 实际上计算了点 \mathbf{p} 到box边缘的最近距离，这意味着如果在计算 \max() 后有多个值为正数，那么box外的符号距离场将会变成圆角。右：一个非圆角方框减去 r ，可以得到一个圆角方框，即让这个box向所有方向上都扩展半径 r 的长度。](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-17/202309101153442.png "图17.34：左：非圆角方框，其符号距离函数为 \\|\max (|\mathbf{p}|-\mathbf{d}, 0)| ，其中点 \mathbf{p} 为待测点，向量 \mathbf{d} 的代表了box的半边长度。请注意，绝对值运算 |\mathbf{p}| 使得其余的计算都发生在右上角象限中（这里使用2D进行说明）。 |\mathbf{p}|-\mathbf{d} 意味着，如果点 \mathbf{p} 沿 x 轴方向上位于box内部，那么 \left|p_{x}\right|-d_{x} 将会是一个负值，其他轴向上也是如此。这里只有正值会被保留，而负值会被 \max() 限制为0。因此， |\max (|\mathbf{p}|-\mathbf{d}, 0)| 实际上计算了点 \mathbf{p} 到box边缘的最近距离，这意味着如果在计算 \max() 后有多个值为正数，那么box外的符号距离场将会变成圆角。右：一个非圆角方框减去 r ，可以得到一个圆角方框，即让这个box向所有方向上都扩展半径 r 的长度。")
 
 隐式表面的法线由偏导数（partial derivative）进行描述，它被称为梯度（gradient），记为$\nabla f$：
 
