@@ -185,7 +185,7 @@ $$
 
 除了改变材质的粗糙度之外，还有另一个思路：根据被着色的表面点来改变的光线方向，从而来表示面光源的照明效果。这种方法被称为代表性点技术（most representative point），它通过对光线向量进行修改，使其在面光源表面方向上，能够对着色表面产生最大的能量贡献，如图 10.9 最右侧所示。Picott \[1415]使用了光源表面上与反射光线夹角最小的点。Karis \[861]对 Picott 的公式进行了改进，他将这个形成最小角度的点，近似为面光源到反射光线最近的点，从而进一步提高效率。他还提出了一个廉价的公式来对光线强度进行缩放，从而尽可能保持整体发射的能量，如图 10.10 所示。大多数代表性点的解都是很容易推导的，并且这种方法适用于各种几何形状的光源，因此对它们背后的理论进行一些了解是很重要的。这些方法的核心思路，类似于蒙特卡洛积分中重要性采样的思想，蒙特卡洛积分是指，我们通过在积分域上对样本结果进行平均，从而对定积分的值进行数值计算。为了更高效地做到这一点（使用较少的样本），我们可以尝试优先考虑那些对总体平均值具有较大贡献的样本。
 
-![图10.10：球的Karis代表性点近似。 首先，计算反射光线上最接近球体中心 \mathbf{l} 的点： \mathbf{p}_{\mathrm{cr}}=(\mathbf{l} \cdot \mathbf{r}) \mathbf{r}-1 。然后再计算球面上距离点 \mathbf{p}_{\mathrm{cr}} 最近的点： \mathbf{p}_{\mathrm{cs}}=\mathbf{l}+\mathbf{p}_{\mathrm{cr}} \cdot \min \left(1, \frac{\text { radius }}{\left\|\mathbf{p}_{\mathrm{cr}}\right\|}\right)](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-10/202306161104098.png "图10.10：球的Karis代表性点近似。 首先，计算反射光线上最接近球体中心 \\mathbf{l} 的点： \mathbf{p}_{\mathrm{cr}}=(\mathbf{l} \cdot \mathbf{r}) \mathbf{r}-1 。然后再计算球面上距离点 \mathbf{p}_{\mathrm{cr}} 最近的点： \mathbf{p}_{\mathrm{cs}}=\mathbf{l}+\mathbf{p}_{\mathrm{cr}} \cdot \min \left(1, \frac{\text { radius }}{\left\|\mathbf{p}_{\mathrm{cr}}\right\|}\right)")
+![图10.10：球的Karis代表性点近似。首先，计算反射光线上最接近球体中心 \mathbf{l} 的点： \mathbf{p}_{\mathrm{cr}}=(\mathbf{l} \cdot \mathbf{r}) \mathbf{r}-1 。然后再计算球面上距离点 \mathbf{p}_{\mathrm{cr}} 最近的点： \mathbf{p}_{\mathrm{cs}}=\mathbf{l}+\mathbf{p}_{\mathrm{cr}} \cdot \min \left(1, \frac{\text { radius }}{\left|\mathbf{p}_{\mathrm{cr}}\right|}\right)](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-10/202306161104098.png "图10.10：球的Karis代表性点近似。首先，计算反射光线上最接近球体中心 \\mathbf{l} 的点： \mathbf{p}_{\mathrm{cr}}=(\mathbf{l} \cdot \mathbf{r}) \mathbf{r}-1 。然后再计算球面上距离点 \mathbf{p}_{\mathrm{cr}} 最近的点： \mathbf{p}_{\mathrm{cs}}=\mathbf{l}+\mathbf{p}_{\mathrm{cr}} \cdot \min \left(1, \frac{\text { radius }}{\left|\mathbf{p}_{\mathrm{cr}}\right|}\right)")
 
 定积分的中值定理可以更加严格地证明其有效性的，它允许我们用函数的单次求值来代替该函数的积分，其数学表达如下：
 
@@ -208,7 +208,7 @@ $$
 
 基于物理的实时渲染，其目标是生成令人信服的、可信的图像，因此我们只能通过将自己限制在一个理想化的场景中来实现这个目标。这就是在计算机图形学中反复出现的 trade-off（权衡），通常我们可以选择为简化假设的简单问题生成精确的解，或者是为更加一般化的问题推导出一个近似的解决方案，从而更好的对现实进行模拟。即选择简单问题的精确解，还是选择复杂问题的近似解。
 
-![图10.12：一个管状光源。使用了代表性点方法来计算图像中的光照效果。 [807]](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-10/202306161343643.png "图10.12：一个管状光源。使用了代表性点方法来计算图像中的光照效果。 [807]")
+![图10.12：一个管状光源。使用了代表性点方法来计算图像中的光照效果。[807]](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-10/202306161343643.png "图10.12：一个管状光源。使用了代表性点方法来计算图像中的光照效果。[807]")
 
 管状光源（也叫做胶囊体光源）是对球形光源的最简单扩展之一，它可以用来表示现实世界中的荧光灯管，如图 10.12 所示。对于 Lambertian BRDF，Picott \[1415]给出了一个封闭形式的光照积分方程，它相当于在线性光源分段（light segment）的极值处，使用适当的衰减函数来评估两个点光源的照明效果，其数学形式如下：
 
@@ -371,7 +371,7 @@ F_{G}(\mathbf{v})=\sum_{k} w_{k} G\left(\mathbf{v}, \mathbf{d}_{k}, \lambda_{k}\
 \tag{10.18}
 $$
 
-将一个球面函数投影（编码）到这种表示方法中，需要找到一组参数集合$\{w_k, \mathbf{d}_k， λ_k\}$，来使得重建误差最小化。这个过程通常会通过数值优化的方法来完成，通常会使用一个非线性的最小二乘优化算法（例如 Levenberg-Marquardt 法）。需要注意的是，如果我们允许在优化过程中改变整个参数集合，那么我们就不会使用函数的线性组合来构造基底，此时方程 10.18 并不代表一组基底。只有当我们选择一组固定的波瓣（固定的方向和固定的扩散角度）时，才能获得一个适当的基底，从而很好地覆盖整个定义域\[1127]，并且只需要对权重$w_k$进行拟合就可以完成投影过程。这样做也大大简化了优化问题，因为现在它可以使用普通的最小二乘法来进行优化。如果我们需要在不同的数据集（投影函数）之间进行插值，这也是一个很好的解决方案，对于这种情况而言，允许波瓣方向和波瓣锐度能够发生变化的坏处是很大的，因为这些参数是高度非线性的，很难进行拟合。
+将一个球面函数投影（编码）到这种表示方法中，需要找到一组参数集合$\{w_k, \mathbf{d}_k，λ_k\}$，来使得重建误差最小化。这个过程通常会通过数值优化的方法来完成，通常会使用一个非线性的最小二乘优化算法（例如 Levenberg-Marquardt 法）。需要注意的是，如果我们允许在优化过程中改变整个参数集合，那么我们就不会使用函数的线性组合来构造基底，此时方程 10.18 并不代表一组基底。只有当我们选择一组固定的波瓣（固定的方向和固定的扩散角度）时，才能获得一个适当的基底，从而很好地覆盖整个定义域\[1127]，并且只需要对权重$w_k$进行拟合就可以完成投影过程。这样做也大大简化了优化问题，因为现在它可以使用普通的最小二乘法来进行优化。如果我们需要在不同的数据集（投影函数）之间进行插值，这也是一个很好的解决方案，对于这种情况而言，允许波瓣方向和波瓣锐度能够发生变化的坏处是很大的，因为这些参数是高度非线性的，很难进行拟合。
 
 这种表示方法的一个优点是，在 SG 上进行的许多操作都有简单的解析形式，两个球面高斯函数的相乘，会产生另一个球面高斯函数\[1838]：
 
@@ -772,7 +772,7 @@ f_{\mathrm{smf}}(\mathbf{l}, \mathbf{v})=\frac{F(\mathbf{h}, \mathbf{l}) G_{2}(\
 \tag{10.38}
 $$
 
-我们可以注意到，即使$D(\mathbf{h}) \approx D_{\text {Phong }}(\mathbf{r})$是有效的，我们在方程 10.37 中积分也去掉了 BRDF 最重要的几个部分：shadowing-masking 项$G_{2}(\mathbf{l}, \mathbf{v}, \mathbf{h})$和半向量菲涅尔项$F(\mathbf{h}, \mathbf{l})$。并且将菲涅尔项放到积分外部是没有理论基础的。Lazarov 指出\[998]，与完全不使用菲涅尔项相比，使用依赖于$\mathbf{n} \cdot \mathbf{v}$的完美镜面的菲涅尔项，而不是微表面 BRDF 中的$\mathbf{n} \cdot \mathbf{h}$，会产生更大的误差。Goanda\[573]， Lazarov\[999]和 Karis\[861]都独立推导出了一个类似的分裂积分近似（split-integral approximation）：
+我们可以注意到，即使$D(\mathbf{h}) \approx D_{\text {Phong }}(\mathbf{r})$是有效的，我们在方程 10.37 中积分也去掉了 BRDF 最重要的几个部分：shadowing-masking 项$G_{2}(\mathbf{l}, \mathbf{v}, \mathbf{h})$和半向量菲涅尔项$F(\mathbf{h}, \mathbf{l})$。并且将菲涅尔项放到积分外部是没有理论基础的。Lazarov 指出\[998]，与完全不使用菲涅尔项相比，使用依赖于$\mathbf{n} \cdot \mathbf{v}$的完美镜面的菲涅尔项，而不是微表面 BRDF 中的$\mathbf{n} \cdot \mathbf{h}$，会产生更大的误差。Goanda\[573]，Lazarov\[999]和 Karis\[861]都独立推导出了一个类似的分裂积分近似（split-integral approximation）：
 
 $$
 \int_{\mathbf{l} \in \Omega} f_{\mathrm{smf}}(\mathbf{l}, \mathbf{v}) L_{i}(\mathbf{l})(\mathbf{n} \cdot \mathbf{l}) d \mathbf{l} \approx \int_{\mathbf{l} \in \Omega} D(\mathbf{r}) L_{i}(\mathbf{l})(\mathbf{n} \cdot \mathbf{l}) d \mathbf{l} \int_{\mathbf{l} \in \Omega} f_{\mathrm{smf}}(\mathbf{l}, \mathbf{v})(\mathbf{n} \cdot \mathbf{l}) d \mathbf{l}

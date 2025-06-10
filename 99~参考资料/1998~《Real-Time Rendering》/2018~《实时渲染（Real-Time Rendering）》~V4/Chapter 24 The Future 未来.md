@@ -43,7 +43,7 @@
 
 实时渲染（包括所有的渲染方式），最终都是关于采样和过滤的问题。除了提高光线发射和求交的效率之外，路径追踪还可以从更加智能的采样和过滤策略中受益。事实上，无论营销文学（marketing literature）如何，几乎所有的离线路径追踪渲染器都是有偏的（biased）\[1276]。对发射采样射线的位置做出合理的假设，能够大幅提高性能表现。路径追踪可以从中受益的另一个领域是智能过滤（字面意思的智能）。深度学习目前是一个白热化的研究领域和开发领域，由于在 2012 年取得了令人印象深刻的进展，当它的表现远远超过了手动调整的图像识别算法时\[349]，人们重新燃起了对其的兴趣。使用神经网络进行降噪\[95, 200, 247]和抗锯齿\[1534]是令人着迷的发展，如图 24.2 所示。我们已经看到，使用神经网络进行渲染相关任务的研究论文的数量大幅增加，更不用说建模和动画了。
 
-![图24.2：基于神经网络的图像重建。左边是通过路径追踪生成的噪声图像。在右边的图像中，使用GPU加速的降噪算法，可以以交互式的速度来对图像进行处理。 [200]](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-24/20231018153409.png "图24.2：基于神经网络的图像重建。左边是通过路径追踪生成的噪声图像。在右边的图像中，使用GPU加速的降噪算法，可以以交互式的速度来对图像进行处理。 [200]")
+![图24.2：基于神经网络的图像重建。左边是通过路径追踪生成的噪声图像。在右边的图像中，使用GPU加速的降噪算法，可以以交互式的速度来对图像进行处理。[200]](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/Real-Time-Rendering/images/Chapter-24/20231018153409.png "图24.2：基于神经网络的图像重建。左边是通过路径追踪生成的噪声图像。在右边的图像中，使用GPU加速的降噪算法，可以以交互式的速度来对图像进行处理。[200]")
 
 最早可以追溯到 1987 年 AT\&T 的 Pixel Machine，它可以使用交互式的光线追踪，来在小场景、低分辨率、较少光源的情况下，实现尖锐的反射、折射和阴影。微软在 DirectX API 中添加了光线追踪功能，被称为 DXR，它简化了光线的发射过程，并激励硬件供应商增加对光线求交的硬件支持。光线发射（ray shooting），通过降噪技术或者其他滤波技术进行增强，将首先成为提高各种元素（例如阴影或者反射）渲染质量的一种技术。它将与许多其他算法进行竞争，每个渲染引擎会根据速度、质量和易用性等因素做出选择，如图 24.3 所示。
 
@@ -69,7 +69,7 @@ GPU 的发展当然还有着其他令人着迷的可能性。另一种理想化�
 
 大多数研究文章都可以使用谷歌学术（Google Scholar）或者作者的个人网站中找到，如果其他方法都失败了，那么还可以向作者索要一份文章副本，几乎每个人都喜欢让他们的工作被阅读和欣赏。
 
-如果有些论文不是免费的话，那么诸如 ACM 数字图书馆（ACM Digital Library）等服务，包含了大量可用的文章。如果您是 SIGGRAPH 的成员，那么您可以自动免费访问他们的许多图形论文和演讲。还有一些期刊会发表相关的技术文章，例如 ACM Transactions on Graphics（现在包括了 SIGGRAPH 的论文集）， The Journal of Computer Graphics Techniques（这是开放获取的），IEEE Transactions on Visualization and Computer Graphics，Computer Graphics Forum，IEEE Computer Graphics and Applications 等。最后，还有一些专业博客中存在有很好的信息，Twitter 上的图形开发人员和研究人员，经常会指出很棒的新资源。
+如果有些论文不是免费的话，那么诸如 ACM 数字图书馆（ACM Digital Library）等服务，包含了大量可用的文章。如果您是 SIGGRAPH 的成员，那么您可以自动免费访问他们的许多图形论文和演讲。还有一些期刊会发表相关的技术文章，例如 ACM Transactions on Graphics（现在包括了 SIGGRAPH 的论文集），The Journal of Computer Graphics Techniques（这是开放获取的），IEEE Transactions on Visualization and Computer Graphics，Computer Graphics Forum，IEEE Computer Graphics and Applications 等。最后，还有一些专业博客中存在有很好的信息，Twitter 上的图形开发人员和研究人员，经常会指出很棒的新资源。
 
 学习他人和结识他人的最快方法之一就是参加会议，很有可能另一个人正在做你感兴趣或者可能感兴趣的事情。如果你资金紧张的话，那么请联系相关的会议组织者，询问志愿者机会或者奖学金。SIGGRAPH 和 SIGGRAPH Asia 年会是新思想的主要场所，但并非是唯一场所。还有一些其他的技术集会，例如 Eurographics 会议和 Eurographics 图形学渲染研讨会（Eurographics Symposium on Rendering，EGSR），交互式 3D 图形和游戏研讨会（Symposium on Interactive 3D Graphics and Games，I3D），以及高性能图形系统（High Performance Graphics，HPG）论坛展示并发布了大量与实时渲染相关的资料。还有一些专门针对开发者的会议，例如 GDC （Game Developers Conference，游戏开发者大会）。当你在排队或者参加活动的时候，记得向陌生人打招呼。特别是在 SIGGRAPH 上，请留意您感兴趣领域的同类聚会（birds of a feather，BOF）。与人们面对面地交流思想是既有益又充满活力的。
 
