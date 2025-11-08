@@ -12,8 +12,8 @@ WebGL，是一项用来在网页上绘制和渲染复杂三维图形（3D 图形
 
 OpenGL ES 可以说是 OpenGL 为了满足嵌入式设备需求而开发一个特殊版本，是其一个子集；而 WebGL，是为了网页渲染效果，将 JavaScript 和 OpenGL ES 2.0 结合在一起，通过增加 OpenGL ES 2.0 的一个 JavaScript 绑定得到。基本关系如下图所示：
 
-![三者关系](https://assets.ng-tech.icu/item/20230326143013.png)
+![三者关系](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20230326143013.png)
 
 在实际应用过程中，前端的 WebGL 是通过 JS 语句，操作本地的 OpenGL 的部分接口，对于移动设备这是操作 OpenGL ES 的接口，来实现页面的图形的渲染，WebGL 只是绑定外面接口的一层，内部的一些核心内容，如着色器，材质，灯光等都是需要借助 GLSL ES 语法来操作的。
 
-![版本关系](https://assets.ng-tech.icu/item/20230326143035.png)
+![版本关系](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20230326143035.png)
