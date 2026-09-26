@@ -16,11 +16,11 @@ Canvas（翻译为画布）是 HTML5 的一个标签，Canvas 可以使用 JavaS
 
 ```html
 <canvas id="container" width="1280px" height="720px"></canvas>
-```cpp
+```
 ```js
 const canvas = document.getElementById("container");
 const context = canvas.getContext("2d");
 context.fillStyle = "rgba(0, 0, 255, 1.0)";
 context.fillRect(120, 10, 150, 150);
-```cpp
+```
 Canvas 只支持一些简单的 2d 绘制，不支持 3d，更重要的是性能有限，WebGL 弥补了这两方便的不足。
