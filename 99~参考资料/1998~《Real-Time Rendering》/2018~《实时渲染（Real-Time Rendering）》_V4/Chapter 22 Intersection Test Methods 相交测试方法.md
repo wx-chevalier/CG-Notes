@@ -752,7 +752,6 @@ $$
 \begin{array}{ll}-\left(\mathbf{m}_{3,}+\mathbf{m}_{0,}\right) \cdot(x, y, z, 1)=0 & {[\text { left }],} \\ -\left(\mathbf{m}_{3,}-\mathbf{m}_{0,}\right) \cdot(x, y, z, 1)=0 & {[\text { right }],} \\ -\left(\mathbf{m}_{3,}+\mathbf{m}_{1,}\right) \cdot(x, y, z, 1)=0 & {[\text { bottom }],} \\ -\left(\mathbf{m}_{3,}-\mathbf{m}_{1,}\right) \cdot(x, y, z, 1)=0 & {[\text { top }],} \\ -\left(\mathbf{m}_{3,}+\mathbf{m}_{2,}\right) \cdot(x, y, z, 1)=0 & {[\text { near }],} \\ -\left(\mathbf{m}_{3,}-\mathbf{m}_{2,}\right) \cdot(x, y, z, 1)=0 & {[\text { far }] .}\end{array}
 \tag{22.27}
 
-
 $$
 
 在网上可以找到使用 OpenGL 和 DirectX 实现这个操作的代码\[600]。

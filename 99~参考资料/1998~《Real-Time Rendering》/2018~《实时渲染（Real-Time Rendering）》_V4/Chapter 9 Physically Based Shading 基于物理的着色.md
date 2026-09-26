@@ -1112,7 +1112,6 @@ $$
 \begin{aligned} f_{\text {smooth }} & =\frac{21}{20}\left(1-F_{0}\right)\left(1-(1-\mathbf{n} \cdot \mathbf{l})^{5}\right)\left(1-(1-\mathbf{n} \cdot \mathbf{v})^{5}\right), \\ f_{\text {rough }} & =k_{\text {facing }}\left(0.9-0.4 k_{\text {facing }}\right)\left(\frac{0.5+\mathbf{n} \cdot \mathbf{h}}{\mathbf{n} \cdot \mathbf{h}}\right), \\ k_{\text {facing }} & =0.5+0.5(\mathbf{l} \cdot \mathbf{v}), \\ f_{\text {multi }} & =0.3641 \alpha_{g},\end{aligned}
 \tag{9.69}
 
-
 $$
 
 方程中的$\alpha_{g}$是 GGX 镜面粗糙度。为了清楚起见，这里所使用术语与 Hammon 的陈述略有不同。请注意，方程 9.69 中的$ f*{\text {smooth }} $，其实就是方程9.64中不含$\rho*{\mathrm{ss}} / \pi$因子的耦合漫反射BRDF，因为这个因子被包含在了方程9.68中。Hammon讨论了一些“混合”BRDF，即使用其他光滑表面的漫反射BRDF来替代$ f\_{\text {smooth }} $，从而提高性能表现，或者改进旧着色模型下的资产兼容性。

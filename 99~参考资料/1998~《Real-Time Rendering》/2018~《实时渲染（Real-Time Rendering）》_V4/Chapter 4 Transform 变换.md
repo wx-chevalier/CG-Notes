@@ -54,7 +54,6 @@
 $$
 \mathbf{f(x)} + \mathbf{f(y)} = \mathbf{f(x + y)} \tag{4.1}
 
-
 $$
 
 $$
@@ -734,7 +733,6 @@ n(\hat{\mathbf{q}}) &=\sqrt{\hat{\mathbf{q}} \hat{\mathbf{q}}^{*}}=\sqrt{\hat{\m
 \end{align}
 \tag{4.33}
 
-
 $$
 
 当$n(\hat{\mathbf{q}}) =\sqrt{\hat{\mathbf{q}} \hat{\mathbf{q}}^{*}}$化简之后，我们可以看到最终结果的虚部消失了，只剩下实部（即一个实数），这个实数叫做虚数$\mathbf{\hat{q}}$的模长，有时候我们也会使用$\Vert \hat{\mathbf{q}} \Vert = n(\hat{\mathbf{q}})$来表示一个虚数的模长\[1105]。我们使用符号来$\hat{\mathbf{q}}^{-1}$表示一个四元数的逆，四元数的逆有这样一个性质，即$\hat{\mathbf{q}}^{-1} \hat{\mathbf{q}} = \hat{\mathbf{q}} \hat{\mathbf{q}}^{-1} =1$。根据虚数模长的定义，我们可以推导出:
@@ -770,7 +768,6 @@ $$
 \mathbf{共轭法则:} \qquad(\hat{\mathbf{q}}+\hat{\mathbf{r}})^{*} &=\hat{\mathbf{q}}^{*}+\hat{\mathbf{r}}^{*}, \\
 (\hat{\mathbf{q}} \hat{\mathbf{r}})^{*} &=\hat{\mathbf{r}}^{*} \hat{\mathbf{q}}^{*} .
 \end{align} \tag{4.36}
-
 
 $$
 
@@ -1372,7 +1369,6 @@ $$
 $$
 z_{\mathrm{NDC}}=\frac{d p_{z}+e}{-p_{z}}=d-\frac{e}{p_{z}}
 \tag{4.78}
-
 
 $$
 

@@ -647,7 +647,6 @@ $$
 \mathbf{n}_{110}^{\prime}=\mathbf{n}_{200}+\mathbf{n}_{020}-2 \frac{\left(\mathbf{p}_{030}-\mathbf{p}_{300}\right) \cdot\left(\mathbf{n}_{200}+\mathbf{n}_{020}\right)}{\left(\mathbf{p}_{030}-\mathbf{p}_{300}\right) \cdot\left(\mathbf{p}_{030}-\mathbf{p}_{300}\right)}\left(\mathbf{p}_{030}-\mathbf{p}_{300}\right)
 \tag{17.47}
 
-
 $$
 
 最初，van Overveld 和 Wyvill 使用系数$3/2$来代替方程 17.47 中的$2$。从最终生成的图像上来看，很难判断到底使用哪个值比较好，但是使用系数 2 符合平面上的真实反射规律。
